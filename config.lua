@@ -51,6 +51,11 @@ lvim.plugins = {
 
   },
   {
+    'mrcjkb/rustaceanvim',
+    version = '^3', -- Recommended
+    ft = { 'rust' },
+  },
+  {
     "ThePrimeagen/refactoring.nvim",
     dependencies = {
       "nvim-lua/plenary.nvim",
@@ -74,6 +79,7 @@ formatters.setup {
     filetypes = { "typescript", "typescriptreact" },
   },
 }
+
 lvim.format_on_save = true
 local linters = require "lvim.lsp.null-ls.linters"
 linters.setup {
